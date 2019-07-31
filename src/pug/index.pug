@@ -1,0 +1,153 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Takemoto
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="./plugins/slick-1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="./plugins/slick-1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    body
+        header
+            .container
+                .header
+                    ul.header__menu
+                        li.header__menu-item
+                            a.header__menu-link(href='#') Shop
+                        li.header__menu-item
+                            a.header__menu-link(href='#') Collections
+                        li.header__menu-item
+                            a.header__menu-link(href='#') Stockist
+                        li.header__menu-item
+                            a.header__menu-link(href='#') About
+                        li.header__menu-item
+                            a.header__menu-link(href='#') Press    
+                    h3.header__logo Wolcott Takemoto
+            .container
+                hr
+                .header__info
+                    .header__info--text Made in NYC
+                    a.header__info--search(href='#')
+                        i.fas.fa-search
+                    a.header__info--btn(href='#') Login / Register
+                    .header__info--cart 0 = $0
+                    a.header__info--shop(href='#')
+                        i.fas.fa-shopping-bag
+                     
+        main
+            section#slider
+                .container
+                    .slider
+                        .slide
+                            .header-slide.section-bg.section-fullscreen(style='background-image: url(./img/slide1.jpg);')
+                                h1.header-slide__title Spring 2017
+                                .btn-border 
+                                    a.header-slide__btn(href="#") Shop Collection 
+                        .slide
+                            .header-slide.section-bg.section-fullscreen(style='background-image: url(./img/slide2.jpg);')
+                                h1.header-slide__title Spring 2018
+                                a.header-slide__btn(href="#") Shop Collection 
+                        .slide
+                            .header-slide.section-bg.section-fullscreen(style='background-image: url(./img/slide3.jpg);')
+                                h1.header-slide__title Spring 2019
+                                a.header-slide__btn(href="#") Shop Collection 
+                        .slide
+                            .header-slide.section-bg.section-fullscreen(style='background-image: url(./img/slide4.jpg);')
+                                h1.header-slide__title Spring 2020
+                                a.header-slide__btn(href="#") Shop Collection 
+            section#text
+                .container
+                    .main-text Wolcott Tacemoto is an independent fashion brand founded in 2011 and all pieces  are designed and produced in NYC with intention of supporting a historical and local industry. 
+            section#gallery
+                    .container
+                        .gallery__container
+                            .row
+                                .row__wrapper.col-md-6.col-12
+                                    img.gallery__image(src="./img/dress1.jpg", alt="")
+                                    p.gallery__text Copper Dress
+                                        span.gallery__text--right $490
+                                    .middle
+                                        a.text(href="") View
+                                .row__wrapper.col-md-6.col-12    
+                                    img.gallery__image(src="./img/dress2.jpg", alt="")
+                                    p.gallery__text Palmer Dress
+                                        span.gallery__text--right $240
+                                    .middle
+                                        a.text(href="") View
+                            .row
+                                .row__wrapper.col-md-6.col-12
+                                    .gallery__image--bg
+                                        img.gallery__image(src="./img/dress3.jpg", alt="")
+                                        .middle
+                                            a.text(href="") View
+                                .row__wrapper.col-md-6.col-12    
+                                    .gallery__image--bg
+                                        img.gallery__image(src="./img/dress4.jpg", alt="")
+                                        .middle
+                                            a.text(href="") View
+                            .gallery__link
+                                a.gallery__btn(href="#") Show more products
+            section#black
+                .container
+                    .background
+            section#subscribe
+                .container
+                    .subscribe__title Subscribe to our newsletter for access to new arrivals  and exlusive sales 
+                    .subscribe__form
+                        input.form__email(type="email" name="email" placeholder="Your email adress..")
+                        input.form__submit(type="submit" name="subscribe" value="SUBSCRIBE")
+        footer
+            .container
+                .footer__wrapper
+                    .row.footer__content
+                        .col-sm-12.col-md-3
+                            p Sales Inquiries
+                            a(href="mailto:sales@wolcott-takemoto.com") sales@wolcott-takemoto.com
+                            br
+                            br
+                            a(href="#") FAQ
+                        .col-sm-12.col-md-3
+                            p Press Inquiries
+                            a(href="mailto:press@wolcott-takemoto.com") press@wolcott-takemoto.com
+                            br
+                            br
+                            a(href="#") Terms of Services
+                        .col-sm-12.col-md-3
+                            p General questions
+                            a(href="mailto:info@wolcott-takemoto.com") info@wolcott-takemoto.com
+                            br
+                            br
+                            a(href="#") Shipping and Return
+                        .col-sm-12.col-md-3
+                            .row
+                                .col-3
+                                    a(href="#")
+                                        i.fab.fa-instagram
+                                .col-3
+                                    a(href="#")
+                                        i.fab.fa-twitter
+                                .col-3
+                                    a(href="#")
+                                        i.fab.fa-facebook-f
+                            br
+                            a(href="#") Privacy and Cookies
+                 
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="./js/script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap"></script>
+
+        
+    
+                        
+                                        
+
+
+            
+
+                    
+     
